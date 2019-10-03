@@ -17,7 +17,19 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="c13-sb-G3t">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="c13-sb-G3t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="686-cF-Cha"/>
+                            <constraint firstItem="c13-sb-G3t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="bEl-3J-30U"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c13-sb-G3t" secondAttribute="trailing" id="bdF-69-8i4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c13-sb-G3t" secondAttribute="bottom" id="dYt-6W-amw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="9c8-wV-A7D">
@@ -27,6 +39,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="c13-sb-G3t" id="dhB-Po-Oyx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -85,13 +100,15 @@
                         <viewLayoutGuide key="safeArea" id="yGu-SF-dwS"/>
                     </view>
                     <connections>
+                        <outlet property="addButton" destination="jL1-Sp-LSp" id="po0-UM-2cp"/>
                         <outlet property="nameTextField" destination="RnC-sU-Eez" id="h2B-cq-Iac"/>
+                        <outlet property="playButton" destination="0aT-BM-n9h" id="5eH-J7-XiK"/>
                         <outlet property="recordButton" destination="fh3-7D-wls" id="jrW-tX-q9U"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RtY-Z8-7cG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1881" y="110"/>
+            <point key="canvasLocation" x="1879.7101449275365" y="109.82142857142857"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Uim-QS-bEd">
